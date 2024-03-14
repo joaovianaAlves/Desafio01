@@ -30,10 +30,10 @@ public class ConsoleCRUD implements CommandLineRunner {
 
             int choice;
             while (true) {
-                String input = scanner.nextLine(); // Read the input as a string
+                String input = scanner.nextLine();
                 try {
-                    choice = Integer.parseInt(input); // Attempt to parse the input as an integer
-                    break; // Exit the loop if an integer is successfully parsed
+                    choice = Integer.parseInt(input);
+                    break;
                 } catch (NumberFormatException e) {
                     System.out.println("Valor inválido. Por favor, insira um número.");
                 }
